@@ -1,0 +1,32 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Banaanipeli</title>
+	<style>
+	body {
+		background-color: yellow;
+	}
+	</style>
+	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+	<script>
+	window.onload = function() {
+	$('#kylla_nappi').click( function() {
+		$('kylla_teksti').show();
+	});
+	
+	$('#ei_nappi').click( function() {
+		$('ei_teksti').show();
+		
+	$('#kylla_teksti').hide();
+	$('#ei_teksti').hide();
+			
+	}
+	</script>
+</head>
+<body>
+<h1>Banaanipeli</h1>
+<p>Annatko kaverillesi banaanin?</p>
+<button id="kylla_nappi">Tottakai</button>
+<button id="ei_nappi">En todellakaan!</button>
+</body>
+</html>
